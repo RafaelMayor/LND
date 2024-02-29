@@ -4,18 +4,52 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ejercicios HTML</title>
+<style>
+  .rainbow-text {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: bold;
+      animation: rainbowAnimation 1s linear infinite;
+  }
+
+  @keyframes rainbowAnimation {
+  0% {
+    color: #ff0000; /* Rojo */
+  }
+  16.666% {
+    color: #ff9900; /* Naranja */
+  }
+  33.333% {
+    color: #ffff00; /* Amarillo */
+  }
+  50% {
+    color: #00ff00; /* Verde */
+  }
+  66.666% {
+    color: #0000ff; /* Azul */
+  }
+  83.333% {
+    color: #9900ff; /* Morado */
+  }
+  100% {
+    color: #ff0000; /* Volver a Rojo para cerrar el círculo */
+  }
+}
+
+</style>
 </head>
 <body>
 
 <div style="text-align: justify;">
 
-    <div style="text-align: right; font-size: 28px;">
+    <div class="rainbow-text" style="text-align: right; font-size: 28px;">
     Rafael Martín Mayor.
     </div>
-    
-    <h1 style="color: #FF2D00; font-size: 50px;"><strong>Ejercicios HTML</strong></h1>
+    <br>
+    <h1 class="rainbow-text" style="font-size: 50px;"><strong>Ejercicios HTML</strong></h1>
 
-    <h1 style="color: #ae00ff;"><strong>Tarea Listas1</strong></h1>
+    <h1 class="rainbow-text"><strong>Tarea Listas1</strong></h1>
     
     <strong>Ejercicio 1</strong>
     
@@ -127,7 +161,7 @@
     </ul>
     </pre>
     
-    <h1 style="color: #ae00ff;"><strong>Tarea enlaces imágenes</strong></h1>
+    <h1 class="rainbow-text"><strong>Tarea enlaces imágenes</strong></h1>
 
     <div style="display: flex; justify-content: center; gap: 20px;">
       <a href="https://es.wikipedia.org/wiki/HTML5" target="_blank">
@@ -145,7 +179,7 @@
       </a>
     </div>
 
-    <h1 style="color: #ae00ff;"><strong>Tarea listas combinadas</strong></h1>
+    <h1 class="rainbow-text"><strong>Tarea listas combinadas</strong></h1>
 
     <h1>Jugadores de fútbol de leyenda</h1>
     <ul>
@@ -172,7 +206,7 @@
       </li>
     </ul>
 
-    <h1 style="color: #ae00ff;"><strong>Tarea Listas</strong></h1>
+    <h1 class="rainbow-text"><strong>Tarea Listas</strong></h1>
 
     <div style="display: flex; flex-direction: row; width: 50%;">
       <div style="flex: 1; padding: 10px;">
@@ -215,7 +249,7 @@
       </div>
     </div>
 
-    <h1 style="color: #ae00ff;"><strong>Ejercicio práctico con tablas</strong></h1>
+    <h1 class="rainbow-text"><strong>Ejercicio práctico con tablas</strong></h1>
 
     <style type="text/css">
       .tg  {border-collapse:collapse;border-spacing:0;}
@@ -278,9 +312,9 @@
       </tbody>
       </table>
 
-      <h1 style="color: #ae00ff;"><strong>Tarea Tablas1</strong></h1>
+      <h1 class="rainbow-text"><strong>Tarea Tablas1</strong></h1>
 
-      <p>Tabla 1:</p>
+      <p class="rainbow-text">Tabla 1:</p>
 
       <style type="text/css">
         .tg  {border-collapse:collapse;border-spacing:0;}
@@ -332,7 +366,7 @@
         </tbody>
         </table>
       
-      <p>Tabla 2:</p>
+      <p class="rainbow-text">Tabla 2:</p>
       
         <style type="text/css">
           .tg  {border-collapse:collapse;border-spacing:0;}
@@ -405,7 +439,7 @@
           </tbody>
           </table>
     
-      <h1 style="color: #ae00ff;"><strong>Ejercicio práctico con tablas</strong></h1>
+      <h1 class="rainbow-text"><strong>Ejercicio práctico con tablas</strong></h1>
 
       
 
