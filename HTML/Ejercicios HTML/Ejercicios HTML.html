@@ -541,6 +541,59 @@
       </tbody>
       </table>
 
+      <h1 class="rainbow-text"><strong>Tarea asociada a página web con frames</strong></h1>
+
+      <style>
+        .frame {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .top, .bottom {
+            width: 100%;
+            overflow: hidden;
+        }
+        .top {
+            height: 20vh;
+            background-color: white;
+            color: red;
+            font-size: large;
+            text-align: center;
+        }
+        .bottom {
+            height: 10vh;
+            background-color:white; 
+            display:flex; 
+            justify-content:center; 
+            align-items:center; 
+            font-size:x-large
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        iframe{
+            width: 20%;
+            border:none
+        }
+      </style>
+      <div class="frame">
+        <div class="top">
+           <h1 style="color:red;text-align:center;font-size:x-large;"><b>CICLOS DE GRADO SUPERIOR</b></h1>  
+           <p style="text-align:left;display:inline-block;width:33%;"><a href="http://www.gobiernodecanarias.org/educacion/webfp/Scripts/OeCurricular.asp?pincel1=CF3&pincel2=57&pincel3=01#modulos">Administración de sistemas informáticos en Red</a></p>  
+           <p style="text-align:center;display:inline-block;width:33%;"><a href="http://www.gobiernodecanarias.org/educacion/webfp/Scripts/OeCurricular.asp?pincel1=CF3&pincel2=57&pincel3=02#modulos">Desarrollo de aplicaciones multiplataforma</a></p>  
+           <p style="text-align:right;display:inline-block;width:33%;"><a href="http://www.gobiernodecanarias.org/educacion/webfp/Scripts/OeCurricular.asp?pincel1=CF3&pincel2=57&pincel3=03#modulos">Desarrollo de aplicaciones web</a></p>  
+        </div>
+    
+        <div class="content">
+            <iframe src="https://www3.gobiernodecanarias.org/medusa/edublog/iespuertodelacruztelesforobravo/" scrolling=yes></iframe>
+        </div>
+    
+        <div class="bottom">Rafael Martín Mayor</div>
+      </div>
+
+
 
     </div>
 
