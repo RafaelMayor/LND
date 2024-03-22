@@ -19,6 +19,20 @@ nav a:hover {
     background-color: rgb(0, 0, 32);
 }
 
+menu>li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+li ul{
+    display:none
+}
+
+li:hover>ul{
+    display: block;
+}
+
 * {
     margin: 0;
     padding: 0;
