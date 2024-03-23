@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Formulario de datos</title>
+</head>
+<body>
+  <h3>Formulario de datos</h3>
+  <hr />
+<form action="procesar.php" method="post">
+  <h4>Datos del propietario</h4>
+  <p>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" size="30" />
+  </p>
+  <p>
+    <label for="sexo">Sexo:</label>
+    <input type="radio" id="sexo_hombre" name="sexo" value="hombre" checked="checked" />
+    <label for="sexo_hombre">Hombre</label>
+    <input type="radio" id="sexo_mujer" name="sexo" value="mujer" />
+    <label for="sexo_mujer">Mujer</label>
+  </p>
+  <h4>Datos del vehículo</h4>
+  <p>
+    <label for="tipo_vehiculo">Características:</label>
+    <br />
+    <input type="checkbox" id="tipo_vehiculo_utilitario" name="tipo_vehiculo[]" value="utilitario" checked="checked" />
+    <label for="tipo_vehiculo_utilitario">Utilitario</label>
+    <br />
+    <input type="checkbox" id="tipo_vehiculo_todoterreno" name="tipo_vehiculo[]" value="todoterreno" />
+    <label for="tipo_vehiculo_todoterreno">Todo terreno</label>
+    <br />
+    <input type="checkbox" id="tipo_vehiculo_altagama" name="tipo_vehiculo[]" value="altagama" checked="checked" />
+    <label for="tipo_vehiculo_altagama">Alta Gama</label>
+  </p>
+  <p>
+    <label for="caracteristicas">Otros datos:</label>
+    <br />
+    <input type="checkbox" id="servofrenos" name="caracteristicas[]" value="servofrenos" checked="checked" />
+    <label for="servofrenos">Servofrenos</label>
+    <br />
+    <input type="checkbox" id="elevalunas" name="caracteristicas[]" value="elevalunas" checked="checked" />
+    <label for="elevalunas">Elevalunas</label>
+    <br />
+    <input type="checkbox" id="remolque" name="caracteristicas[]" value="remolque" />
+    <label for="remolque">Remolque</label>
+  </p>
+  <p>
+    <input type="submit" value="Enviar" />
+    <input type="hidden" name="email" value="rmarmay2004@gmail.com" />
+  </p>
+</form>
+<hr />
+</body>
+</html>
