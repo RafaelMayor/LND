@@ -1,0 +1,17 @@
+header img {
+    width: 600px; height: 100px;
+}
+
+nav {
+    width: 30%;
+    float: left;
+}
+
+main {
+    width: 70%; height: 800px;
+    float: right;
+}
+
+main iframe {
+    width: 70%; height: 500px;
+}
