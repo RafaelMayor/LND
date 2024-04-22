@@ -25,36 +25,33 @@
 
             #cuerpo {
                 background-color: pink;
-                height: 320px;
+                position: relative;
             }
 
-            .caja {
+            #cuerpo .caja {
                 width: 20%;
                 height: 100px;
                 background-color: gray;
-                border: 3px solid blue;
-                float: left;
-                margin-right: 5px;
+                border: 4px solid blue;
+                display: inline-block;
+                position: relative;
             }
 
-            .caja:nth-child(6){
+            #cuerpo .caja:nth-child(6){
                 background-color: red;
                 opacity: 80%;
-                position: relative;
                 bottom: 40px;
                 left: 40px;
+                z-index: 1;
             }
 
-            .caja:nth-child(8){
+            #cuerpo .caja:nth-child(8){
                 background-color: darkred;
                 opacity: 70%;
-                position: relative;
-                bottom: 40px;
-                left: 40px;
-            }
-
-            .caja:nth-child(9){
-                margin-left: -20.6%;
+                position: absolute;
+                top: 13%;
+                left: 75%;
+                z-index: 1;
             }
 
             #pie {
@@ -81,7 +78,7 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
         <div id="cuerpo" >
-            <div class="caja">
+            <div class="caja ">
                 <h1>Caja 1</h1>
             </div>
 
