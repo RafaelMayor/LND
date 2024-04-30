@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        border-radius: 100%;
+    }
+
+    @keyframes example {
+        0% {background-color: red;left: 0px;top: 0px;}
+        25% {background-color: yellow;left: 200px;top: 0px;}
+        50% {background-color: green;left: 200px;top: 200px;}
+        75% {background-color: blue;left: 0px;top: 200px;}
+        100% {background-color: red;left: 0px;top: 0px;}
+    }
+
+    @keyframes mymove {
+        from {
+            left: 0px;
+        }
+
+        to {
+            left: 300px;
+        }
+    }
+
+    #div-1 {
+        animation-timing-function: linear;
+    }
+
+    #div-2 {
+        animation-timing-function: ease;
+    }
+
+    #div-3 {
+        animation-timing-function: ease-in;
+    }
+
+    #div-4 {
+        animation-timing-function: ease-out;
+    }
+
+    #div-5 {
+        animation-timing-function: ease-in-out;
+    }
+</style>
+<body>
+    <div id="div-1"></div>
+    <div id="div-2"></div>
+    <div id="div-3"></div>
+    <div id="div-4"></div>
+    <div id="div-5"></div>
+</body>
+</html>
