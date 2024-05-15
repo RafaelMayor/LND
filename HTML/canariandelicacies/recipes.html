@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Canarias</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: rgb(0, 255, 255);
+    color: rgb(255, 255, 0);
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Pinyon Script", cursive;
+    font-size: large;
+}
+
+.recipes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 28%;
+}
+
+article h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+article p {
+    color: #555;
+}
+
+article h3 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    color: #555;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table-header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recetas Canarias</h1>
+    </header>
+
+    <section>
+        <article>
+            <h2>Papas Arrugadas</h2>
+            <p>Las papas arrugadas son un plato tradicional canario. Se sirven como acompañamiento con mojo.</p>
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>Papas</li>
+                <li>Sal gruesa</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ol>
+                <li>Lavar bien las papas.</li>
+                <li>Cocinar las papas en agua con sal hasta que estén tiernas.</li>
+                <li>Escurrir las papas y dejarlas secar.</li>
+                <li>Una vez secas, ponerlas de nuevo en la olla y dejarlas cocinar a fuego bajo hasta que se arruguen.</li>
+                <li>Servir caliente con mojo.</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Mojo Picón</h2>
+            <p>El mojo picón es una salsa típica canaria que acompaña muchos platos, especialmente las papas arrugadas.</p>
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>Pimientos rojos secos</li>
+                <li>Dientes de ajo</li>
+                <li>Comino</li>
+                <li>Pimentón</li>
+                <li>Vinagre</li>
+                <li>Aceite de oliva</li>
+                <li>Sal</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ol>
+                <li>Hidratar los pimientos rojos secos en agua caliente durante unos 30 minutos.</li>
+                <li>En un mortero, machacar los dientes de ajo, el comino, el pimentón y la sal hasta formar una pasta.</li>
+                <li>Agregar los pimientos rojos hidratados y seguir machacando.</li>
+                <li>Añadir un chorrito de vinagre y mezclar bien.</li>
+                <li>Por último, añadir el aceite de oliva poco a poco mientras se sigue mezclando hasta obtener la textura deseada.</li>
+            </ol>
+        </article>
+    </section>
+
+    <section>
+        <h2 class="table-header">Tabla de Ingredientes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Receta</th>
+                    <th>Ingrediente</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" align="center">Papas Arrugadas</td>
+                    <td>Papas</td>
+                    <td>Varía según el número de comensales</td>
+                </tr>
+                <tr>
+                    <td>Sal gruesa</td>
+                    <td>Al gusto</td>
+                </tr>
+                <tr>
+                    <td rowspan="7" align="center">Mojo Picón</td>
+                    <td>Pimientos rojos secos</td>
+                    <td>3 unidades</td>
+                </tr>
+                <tr>
+                    <td>Dientes de ajo</td>
+                    <td>3 unidades</td>
+                </tr>
+                <tr>
+                    <td>Comino</td>
+                    <td>1 cucharadita</td>
+                </tr>
+                <tr>
+                    <td>Pimentón</td>
+                    <td>1 cucharadita</td>
+                </tr>
+                <tr>
+                    <td>Vinagre</td>
+                    <td>2 cucharadas</td>
+                </tr>
+                <tr>
+                    <td>Aceite de oliva</td>
+                    <td>100 ml</td>
+                </tr>
+                <tr>
+                    <td>Sal</td>
+                    <td>Al gusto</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
